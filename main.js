@@ -12,20 +12,10 @@ var app = new Vue({
                 .get('https://flynn.boolean.careers/exercises/api/random/mail')
                 .then(function(risposta) {
 
-                    console.log(risposta);
-                    // self.email = risposta.data.response;
-
+                    // console.log(risposta);
                     self.email.push(risposta.data.response);
 
                 });
-
-
         }
-
-        // if (self.email.length == 10) {
-        //     self.ready = true;
-        //     console.log(self.ready);
-        // }
-
     }
 });
