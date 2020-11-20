@@ -10,7 +10,7 @@
     <body>
 
         <div id="root">
-            <ul>
+            <ul v-if="email.length == 10">
                 <li v-for="(element,index) in email">{{index + 1}}:  {{element}}</li>
             </ul>
 

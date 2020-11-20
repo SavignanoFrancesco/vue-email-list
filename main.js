@@ -18,6 +18,14 @@ var app = new Vue({
                     self.email.push(risposta.data.response);
 
                 });
+
+
         }
+
+        // if (self.email.length == 10) {
+        //     self.ready = true;
+        //     console.log(self.ready);
+        // }
+
     }
 });
