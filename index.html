@@ -9,19 +9,23 @@
     </head>
     <body>
 
+        <div class="background">
+
+        </div>
+
         <div id="root" class="container">
 
-            <div v-if="email.length < 10" class="loading">
+            <div v-if="email.length < email_quantity" class="loading">
                 <span>Loading please wait...</span>
             </div>
 
-            <div class="card" v-if="email.length == 10">
+            <div class="card" v-if="email.length == email_quantity">
                 <div class="email-list">
 
                     <h1>Email list with ajax</h1>
 
                     <ul>
-                        <li v-for="(element,index) in email">{{index + 1}}:  {{element}}</li>
+                        <li v-for="(element,index) in email">{{index + 1}}:  <a href="#">{{element}}</a></li>
                     </ul>
                 </div>
             </div>

@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url('https://heroic.com/wp-content/uploads/HEROIC-Email-Security-Background.jpg');
+    background-size: cover;
+}
+
 ul{
     list-style: none;
     background: whitesmoke;
@@ -14,25 +19,25 @@ ul{
 }
 
 ul li{
-    margin-left: 5px;
+    padding: 5px;
     font-size: 18px;
 }
-
 .container{
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url('https://heroic.com/wp-content/uploads/HEROIC-Email-Security-Background.jpg');
+    justify-content: flex-start;
+        align-items: center;
 }
 
 .card{
+    margin: 20px 0;
     border: 4px solid black;
 }
 
 .loading{
+    margin-top: 20px;
     background: white;
     padding: 20px;
     border-radius: 10px;
@@ -42,4 +47,8 @@ ul li{
 .email-list h1{
     padding: 20px 10px;
     background: lightgrey;
+}
+
+.email-list a{
+    align-self: center;
 }
