@@ -15,13 +15,15 @@
                 <span>Loading please wait...</span>
             </div>
 
-            <div v-if="email.length == 10">
+            <div class="card" v-if="email.length == 10">
+                <div class="email-list">
 
-                <h1>Email list with ajax</h1>
+                    <h1>Email list with ajax</h1>
 
-                <ul>
-                    <li v-for="(element,index) in email">{{index + 1}}:  {{element}}</li>
-                </ul>
+                    <ul>
+                        <li v-for="(element,index) in email">{{index + 1}}:  {{element}}</li>
+                    </ul>
+                </div>
             </div>
 
         </div>
